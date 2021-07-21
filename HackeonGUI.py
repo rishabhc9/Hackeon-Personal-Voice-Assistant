@@ -310,13 +310,13 @@ window = Tk()
 window.geometry("240x200")
 window.resizable(False, False)
 window.title("Hackeon Voice Assistant")
-window['background']='#03045e'
+window['background']='#1B3459'
 imgr = PhotoImage(file="run.png")
 b = Button(window, text="Start", command=run,image=imgr,fg='#03045e',relief=RAISED)
 b.place(x=70, y=60)
 def callback(url):
     webbrowser.open_new_tab(url)
-link = Label(window, text="Made By: @rishabhchopda ",font=('Verdana 15 underline', 15,'underline'), bg="#03045e",fg="#38B6FF", cursor="hand",)
+link = Label(window, text="Made By: @rishabhchopda ",font=('Verdana 15 underline', 15,'underline'), bg="#1B3459",fg="#40C6CC", cursor="hand",)
 link.place(x=25,y=160)
 link.bind("<Button-1>", lambda e:
 callback("https://rishabhc9.github.io/rishabhchopda/"))
